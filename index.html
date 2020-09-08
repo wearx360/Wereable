@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Wearx360</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/Wearx.png" width="64px" alt="">Wearx360</a>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="productos/blusas.html">Blusas</a></li>
+                <li><a href="#">Leggings</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+    <div class="container">
+        <div class="portada">
+            <img src="images/pic1.jpg" alt="">
+        </div>
+        <!--Tarjetas de productos-->
+        <div class="tarjetas">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/ropa.svg" width="300px" height="250px">
+                </div>
+                <div class="contentBx">
+                    <h3>blusas</h3>
+                    
+                    <a href="productos/blusas.html" class="buy">Ver mas..</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/leggings.svg" width="320px" height="250px">
+                </div>
+                <div class="contentBx">
+                    <h3>leggings</h3>
+                    
+                    <a href="productos/legg.html" class="buy">Ver mas..</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/accesorios.svg" width="320px" height="250px">
+                </div>
+                <div class="contentBx">
+                    <h3>accesorios</h3>
+                    
+                    <a href="#" class="buy">Ver mas..</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="pie">
+                <h3>Direccion:</h3>
+                <p>Emiliano Zapata #360,<br> Colonia la Palma <br> Saltillo, Coah. <br> C.P. 25023</p>
+            </div>
+            <div class="pie">
+                <h3>Telefono:</h3>
+                <p><i class="fa fa-whatsapp"></i> 844 327 0663</p>
+            </div>
+            <div class="pie">
+                <h3>Correo:</h3>
+                <p><i class="fa fa-envelope"></i> wearx360@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('.menu-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+                })
+            })
+        </script>
+</body>
+</html>
