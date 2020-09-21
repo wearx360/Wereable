@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Sudaderas</title>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="img/logo.png"  class="logo" alt=""></a>
+            <div class="toggleMenu" onclick="menuToogle();"></div>
+            <ul class="navigation">
+                <li><a href="../index.html" class="active">Inicio</a></li>
+                <li><a href="blusas.html">Blusas</a></li>
+                <li><a href="legg.html">Leggings</a></li>
+                <li><a href="#">Sudaderas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Esto te<br><span> Abriga</span></h2>
+                <p>Sudadera, ideal para hacer ejercicio.</p>
+                <ul>
+                    <li>9 Colores diferentes.</li>
+                    <li>Composición 50% Poliester / 50 % Algodon</li>
+                    <li>Bolsa frontal para llevar tu celular o accesorios</li>
+                    <li>Agradable al tacto y cómoda</li>
+                    <li>Unisex</li>
+                </ul>
+                <p>*Los colores  y diseños pueden variar*</p>
+                <a href="https://api.whatsapp.com/send?phone=528443270663&text=hola,%20quiero%20mi%20sudadera%20color:?">Quiero una</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/sudaderas.png" class="pepsi" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/sudadera-rojo.png" onclick="imgSlider('img/sudadera-rojo.png');changebgColor('#FFB6C1')" alt=""></li>
+            <li><img src="img/sudadera-mostaza.png" onclick="imgSlider('img/sudadera-mostaza.png');changebgColor('#F0E68C')" alt=""></li>
+            <li><img src="img/sudadera-rosa.png" onclick="imgSlider('img/sudadera-rosa.png');changebgColor('#FFF8DC')" alt=""></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/Wearx360-108748654301146/"><img src="img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changebgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background=color;
+        }
+        function menuToogle(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
